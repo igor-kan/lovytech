@@ -1,75 +1,37 @@
 # lovytech
 
-A technology-focused application or platform. (Please update this description with specific details about the app's purpose, features, and target audience, e.g., a tech blog, a SaaS tool, a portfolio site, etc.).
+A technology-focused web app for sharing tech content and tools.
 
 ## Features
-- (Add key features, e.g., blog posts, project showcases, service descriptions)
+- Blog posts, project showcases, or service descriptions
 - User accounts and profiles (if applicable)
-- Interactive elements or tools (if applicable)
+- Interactive elements or tools
 - Responsive design
 
-## Getting Started
+## Live Demo
 
-### Prerequisites
-- Node.js (version 18 or higher)
-- npm (or pnpm, if `pnpm-lock.yaml` is used)
+Visit the live site: [https://igor-kan.github.io/lovytech](https://igor-kan.github.io/lovytech)
 
-### Installation
-1. Clone the repository:
+## Local Development
+
+1. Install dependencies:
     ```bash
-    git clone https://github.com/igor-kan/lovytech.git
-    cd lovytech
+    npm install
     ```
-2. Install dependencies:
+2. Start the development server:
     ```bash
-    npm install 
-    # or
-    # pnpm install
+    npm run dev
     ```
 
-### Running the Development Server
-To start the development server, run:
+## Deployment
+
+This app is automatically deployed to GitHub Pages from the `gh-pages` branch. The static site is built with Next.js and output to the `out` directory.
+
+To deploy manually:
 ```bash
-npm run dev
-# or
-# pnpm dev
+npm run deploy
 ```
-This will typically start the server on `http://localhost:3000`.
 
-## Technologies Used
-- Next.js
-- React
-- Tailwind CSS
-- (Please confirm and add other technologies used)
+---
 
-## Deployment (GitHub Pages)
-
-You can deploy this project to GitHub Pages:
-
-1. **Build the static site:**
-   Ensure your Next.js app is configured for static export (e.g., `next build && next export`). The output directory is usually `out`.
-    ```bash
-    npm run build
-    ```
-2. **Install `gh-pages`:**
-    ```bash
-    npm install --save-dev gh-pages
-    ```
-3. **Update `package.json`:**
-    Add `homepage` and `scripts` for deployment. The `deploy` script should point to the `out` directory.
-    ```json
-    {
-      "homepage": "https://igor-kan.github.io/lovytech",
-      "scripts": {
-        "predeploy": "npm run build", 
-        "deploy": "gh-pages -d out" 
-      }
-    }
-    ```
-4. **Deploy:**
-    ```bash
-    npm run deploy
-    ```
-
-## Custom Domain
-You can connect a custom domain to your deployed project. Refer to your hosting provider's documentation for instructions. 
+For more, see [GitHub Pages for this repo](https://igor-kan.github.io/lovytech). 
